@@ -18,7 +18,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 
 
-@ExperimentalCoroutinesApi
 @AndroidEntryPoint
 class ToDoActivity : AppCompatActivity(), TodoListAdapter.TodoItemListener {
 
