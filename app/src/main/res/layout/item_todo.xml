@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/completedCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/ic_check"
+        android:buttonTint="@color/black"
+        android:layout_centerVertical="true"
+        android:checked="false" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/todoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/tvEdit"
+        android:layout_toEndOf="@id/completedCheck" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/tvRemove"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_dark"
+        android:text="@string/edit"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="@string/remove"/>
+
+</RelativeLayout>
